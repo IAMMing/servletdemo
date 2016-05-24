@@ -1,0 +1,104 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>index</servlet-name>
+		<servlet-class>cn.lidm.web.ui.IndexServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>adduser</servlet-name>
+		<servlet-class>cn.lidm.web.ui.manage.AddUser</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>lstuser</servlet-name>
+		<servlet-class>cn.lidm.web.ui.manage.ListUser</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>submituser</servlet-name>
+		<servlet-class>cn.lidm.web.controller.AddUser</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>addcolumnui</servlet-name>
+		<servlet-class>cn.lidm.web.ui.manage.AddColumn</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>submitcolumn</servlet-name>
+		<servlet-class>cn.lidm.web.controller.SubmitColumn</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>listcolumn</servlet-name>
+		<servlet-class>cn.lidm.web.ui.manage.ListColumn</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>addarticleui</servlet-name>
+		<servlet-class>cn.lidm.web.ui.manage.AddArticle</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>submitarticle</servlet-name>
+		<servlet-class>cn.lidm.web.controller.SubmitArticle</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>listarticle</servlet-name>
+		<servlet-class>cn.lidm.web.ui.manage.ListArticle</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>editcolumn</servlet-name>
+		<servlet-class>cn.lidm.web.ui.manage.EditColumn</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>editcolumn</servlet-name>
+		<url-pattern>/editcolumn</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>listarticle</servlet-name>
+		<url-pattern>/listarticle</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>submitarticle</servlet-name>
+		<url-pattern>/submitarticle</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>addarticleui</servlet-name>
+		<url-pattern>/addarticle</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>listcolumn</servlet-name>
+		<url-pattern>/listcolumn</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>submitcolumn</servlet-name>
+		<url-pattern>/submitcolumn</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>addcolumnui</servlet-name>
+		<url-pattern>/addcolumn</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>lstuser</servlet-name>
+		<url-pattern>/lstuser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>submituser</servlet-name>
+		<url-pattern>/submituser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>adduser</servlet-name>
+		<url-pattern>/adduser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index</welcome-file>
+	</welcome-file-list>
+</web-app>
